@@ -1,0 +1,172 @@
+/* =================================================
+Stylesheet für die Übungsseiten aus "Little Boxes, Teil 1"
+Stand: Aufgeräumtes Stylesheet (Ende Kap. 08)
+Datei: bildschirm.css
+Datum: 2009-04-20
+Autor: Peter Müller
+Aufbau: 1. Kalibrierung und Restauration
+        2. Allgemeine Styles
+        3. Styles für Layoutbereiche
+        4. Sonstige Styles
+================================================== */
+
+/* ======================================
+1. Kalibrierung und Restauration
+====================================== */
+/* Reset - alle Abstände auf NULL */
+* { padding: 0; margin: 0; }
+/* optional: erzwingt Scrollbar im Firefox */
+html { height: 101%; }
+h2, p, ul, ol { margin-bottom: 1em; }
+ul ul { margin-bottom: 0; }
+li { margin-left: 1em ; }
+/* hier ggfs. Abstände für weitere Elemente restaurieren */
+
+/* ======================================
+2. Allgemeine Styles
+====================================== */
+body {
+  background-color: #8c8c8c;
+  color: white;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+h1 { font-size: 150%; }
+h2 { font-size: 130%; }
+address {
+  text-align: center;
+  font-size: 80%;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  /* outline: none; */ /* nur wenn es Sie wirklich stört */
+}
+a:link { color: #d90000; }
+a:visited { color: #cc6666; }
+a:hover,
+a:focus {
+  border-bottom: 1px solid #d90000;
+}
+a:active {
+  color: white;
+  background-color: #d90000;
+}
+/* Allgemeine Klassen und IDs */
+img#logo {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: 10px solid #d9d9d9;
+}
+
+/* ======================================
+3. Styles für die Layoutbereiche
+====================================== */
+#wrapper {
+  background-color: white;
+  color: black;
+  width: 720px;
+  margin: 10px auto;
+}
+#kopfbereich {
+  background: #ffe574 url(farbverlauf.jpg) repeat-y top left;
+  color: black;
+  padding: 10px 20px 0 20px;
+}
+p#slogan{
+  padding: 5px 0 5px 0;
+  margin-bottom: 0; /* war 1em */
+  }
+p#slogan span{
+  color: #d90000;
+}
+
+#navibereich {
+  text-align: right; /* rechtsbündig */
+  color: black;
+  background: #ffe574 url("farbverlauf.jpg") repeat-y left top;
+  padding: 5px 20px 4px 20px;
+  border-bottom: 1px solid #8c8c8c;
+}
+#navibereich ul { margin-bottom: 0;}
+#navibereich li {
+  display: inline;        /* li nebeneinander anzeigen */
+  list-style-type: none;  /* ohne Aufzählpunkte */
+  margin: 0; /* rechts 10px, sondst 0; */
+}
+#navibereich a { 
+  color: black; 
+  background-color: #ffeda0;
+  padding: 4px 8px 4px 8px;
+  border: 1px solid #8c8c8c;
+}
+#navibereich li.sie-sind-hier a{
+  color: black;
+  background-color: white;
+  border-bottom-color: white;
+} 
+#navibereich a:hover,
+#navibereich a:focus {
+  color: black;
+  background-color: white; /* war #d90000 */
+  border-bottom-color: white;
+}
+#navibereich a:active {
+  color: black;
+  background-color: white;
+  border-bottom-color: white;
+}
+#textbereich {
+  padding: 20px 10px 20px 20px;
+}
+#textbereich a {
+  border-bottom: 1px dotted #cc0000;
+}
+#textbereich a:hover,
+#textbereich a:focus {
+  border-bottom: 1px solid #d90000;
+}
+#fussbereich {
+   padding: 10px 20px 20px 20px;
+   border-top: 1px solid #8c8c8c;
+   margin-top: 0;
+ }
+
+/* ======================================
+4. Sonstige Styles
+====================================== */
+form {
+  background-color: #d9d9d9;
+  width: 370px; /* Breite des Formulars */
+  padding: 20;
+  border: 1px solid #8c8c8c;
+}
+label { /* Beschriftung auf eigener Zeile */
+  display: block;
+  cursor: pointer; /* Mauszeiger wird zur hand */
+}
+input#besuchername,
+input#besuchermail,
+textarea {
+  width: 300px;
+  border: 1px solid #8c8c8c;
+  margin-bottom: 1em;
+}
+textarea {
+  height: 7em;
+}
+input:focus,
+textarea:focus{
+  background-color: #d9d9d9;
+}
+
+
+
+
+/* =======================================
+E N D E   D E S   S T Y L E S H E E T S
+======================================= */
+

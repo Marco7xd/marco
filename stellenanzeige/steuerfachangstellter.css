@@ -1,0 +1,142 @@
+h2,h1,h3,h4 { color: #e78500 !important;}
+
+h4 {
+	text-align: center;
+    }
+h2 {
+	font-size: 15px !important;
+}
+
+h3 {
+	font-size: 15px !important;
+	text-align: center;
+	}
+
+h1 {
+	font-size: 12px !important;
+	margin-top: 10px !important;
+	margin-bottom: 30px;
+	font-weight: 250 !important;
+	padding: 30px;
+	font-family: Open Sans, Arial, sans-serif !important;
+}
+
+hr {
+	color: #e78500;
+	border: 2px solid #e78500 !important;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	width: 100%;
+}
+
+a {
+	color: #000 !important;
+	text-decoration: underline !important;
+}
+
+#wrapper {
+	background-color: #fff;
+	margin-top: 0;
+	padding-top: 20px;
+}
+
+html {
+	background-color: rgba(70, 70, 70, 0.8);
+}
+
+#footer {
+	background-color: #e78500;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#left {
+	text-align: left;
+	padding: 0;
+}
+
+#right {
+	text-align: right;
+	padding: 0;
+}
+
+#header {
+	margin-top: 0;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+}
+
+#header,
+#header_paragraph,
+h1
+{
+	text-align: center;
+}
+
+#header_paragraph {
+	font-family: Open Sans, Arial, sans-serif;
+	font-weight: 600;
+	padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 8;
+}
+
+li {
+  padding-left: 0em; 
+  text-indent: -.7em;
+}
+
+li::before {
+  content: "• "; 
+  font-weight: 500;
+  color: #e78500; 
+  
+}
+
+
+
+#header_text_wrapper {
+	background-image: url("steuerfoto.png");
+	background-repeat: no-repeat;
+	background-size: 150%;
+}
+
+#header_text {
+	font-weight: 250;
+    color: rgb(232, 131, 0);
+    padding: 5px 12px;
+    padding-right: 0;
+    width: 30%;
+    float:right;
+    margin-top: 8%;
+}
+
+.header_text {
+	background-color: rgba(70, 70, 70, 0.8);
+	border-color: rgb(0, 0, 0);
+}
+
+#header img {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+
+ 
+
+
+
+ @media (max-width: 1200px){
+	#left,
+	#right{
+		width: 100%;
+		text-align: center;
+	}
+
+
+}

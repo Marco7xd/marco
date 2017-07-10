@@ -1,0 +1,13 @@
+/* =================================================
+Stylesheet für die Beispielsite aus "Little boxes"
+Stand: Druckversion
+Datei: druckversion.css
+Media: print
+Datum: ...
+Autor: ...
+==================================================*/
+
+body{
+  font-family: Georgia, "time New Roman", Times, serif;
+  font-size: 11pt;
+}
