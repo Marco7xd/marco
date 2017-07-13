@@ -11,3 +11,23 @@ body{
   font-family: Georgia, "time New Roman", Times, serif;
   font-size: 11pt;
 }
+
+h1,h2 { font-family: Verdana, arial, Helvetica, sans-serif; }
+h1 { font-size: 24pt; }
+h2 {
+	font-size: 18pt
+	padding: 6pt; /* Abstand zwischen text und Rahmenlinie */
+	border-top:  3pt solid #d90000; /* rote Rahmenlinie oben */
+	margin-top: 12pt;
+}
+#navibereich {
+	display: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+a[href]:after{
+	content:" [Adresse: "attr(href)"] "; /* [URL] nach linktext */
+}

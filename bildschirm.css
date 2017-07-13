@@ -72,15 +72,20 @@ img#logo {
   margin: 10px auto;
 }
 #kopfbereich {
+  position: relative; /* poitioniert, aber bleibt im fluss */
   background: #ffe574 url(farbverlauf.jpg) repeat-y top left;
   color: black;
   padding: 10px 20px 0 20px;
 }
 p#slogan{
+  position: absolute;
+  top: 25px ;
+  left: 50%;
   padding: 5px 0 5px 0;
   margin-bottom: 0; /* war 1em */
   }
 p#slogan span{
+  position:absolute;
   color: #d90000;
 }
 
