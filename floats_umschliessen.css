@@ -1,0 +1,20 @@
+<style>
+body{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: small;
+}
+h2 { font-size: 130; }
+h3 {
+	font-size: 110%;
+	margin: 0 0 1em 0;
+}
+div.galerie {
+    background-color: #eee
+    width: 500px;
+    padding: 10px;
+    padding-top: 25px;
+    border: 1px solid black;
+    margin: 0 3px 3px 0;
+}
+
+</style>

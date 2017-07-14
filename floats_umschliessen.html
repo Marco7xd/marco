@@ -1,0 +1,55 @@
+<h2>Die Galerie</h2>
+
+<div class="galerie">
+ <img src="landschaft01.jpg" width="203" height="180"
+   alt="Von bäumen umstandener See, in dem sich wolken spiegeln">
+   <h3>Landschaftsbild 01</h3>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+       Suspendisse egestas ultricies pede.</p>
+       <hr>
+</div>
+
+<div class="galerie">
+ <img src="landschaft02.jpg" width="203" height="180"
+    alt="Weite Grasfläche mit Wolken und Halmen im Vordergrund">
+    <h3>Landschaftsbild 02</h3>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+       Suspendisse egestas ultricies pede.</p>
+       <hr>
+</div>
+
+<p class="clearing">Alle Fotos von <a href="http://pixelio.de/"
+   rel="external">pixelio.de</a></p>
+
+<style>
+body{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: small;
+}
+h2 { font-size: 130; }
+h3 {
+	font-size: 110%;
+	margin: 0 0 1em 0;
+}
+div.galerie {
+    overflow: hidden;
+    background-color: #eee
+    width: 500px;
+    padding: 10px;
+    padding-top: 25px;
+    border: 1px solid black;
+    margin: 0 3px 3px 0;
+}
+div.galerie img {
+	float: left;
+	margin-right: 15px;
+}
+div.galerie hr{
+	clear: both;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+.clearing { clear: both; }
+</style>
