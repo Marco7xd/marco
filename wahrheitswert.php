@@ -17,4 +17,16 @@
    echo "boolval(0.0): " . boolval(0.0)
       . " , boolval(0.000000001): "
       . boolval(0.000000001) . "<br>";
-   echo 
+   echo "boolval(''): " . boolval('')
+      . ", boolval(' '): " . boolval(' ')
+      . ", boolval('0'): " . boolval('0') . "<br><br>";
+
+   $zahl = 42;
+   $text = "42";
+   if($zahl == $text) echo "==<br>";
+   if($zahl != $text) echo " !=<br>";
+   if($zahl === $text) echo "===<br>";
+   if($zahl !== $text) echo "!==<br>";
+?>
+
+</body></html>   
