@@ -1,0 +1,281 @@
+Kurz php usw übersicht
+
+
+!VARIABLENNAMEN!Für den  Namen einer Variablen gelten folgende Regeln:
+
+$(DOLLARZEICHEN)  - Er muss mut einem Dollarzeichen beginnen.
+                  
+                  - Er darf keine Leerzeichen enthalten
+
+                  - Er darf nur aus Buchstaben und Ziffern bestehen, wobei das erste
+                    Zeichen ein Buchstabe sein muss.Es sind Groß- und Kleinbuchstaben
+                    erlaubt, zwischen denen jedoch unterschieden wird
+                    ($HokusPokus ist nicht das gleiche wie $hokuspokus).
+
+                  - Er darf keine deutschen Umlaute und kein ß(scharfes S) enthalten
+
+                  - Er darf als einziges Sonderzeichen den _ (Untersctrich) enthalten.
+
+                  - Er darf nicht mit einem reservierten Wort, z.B. mit einem Befehl aus
+                    der PHP,identisch sein.
+_______________________________________________________________________________________________________
+
+
+STRINGS           - Zeichenketten (Strings) müssen in doppelte Hochkommata (" ")oder in
+                    einfache Hochkommata (' ') eingeschlossen werden.
+
+
+
+HOCHKOMMA,PUNKT   - Das Zeichen . (Punkt) dient der Verkettung von Zeichenketten bzw.
+                    von Zahlen und Zeichenketten.Dies wird z.B. für eine kommentierte 
+                    Ergebnisausgabe genutzt. Der Operator .= (Punkt gleich) kann zu
+                    Vergrößerung einer Zeichenkette eingesetzt werden.
+                    Falls die Zeichenkette HTML-Code enthalten, gelangt dieser
+                    HTML-Code zur Ausführung.
+
+______________________________________________________________________________________________________
+
+                                            VERZWEIGUNGEN
+
+                    Bisher werden die Dateinen mit Dem HTML-CODE und dem PHP-CODE rein
+                    sequenziell abgearbeitet, das heißt, es wird eine Anweisung nach 
+                    der anderen durchgeführt.Progamme sind aber auch in der Lage,
+                    auf unterschedliiche Bedingungen zu reagieren.
+                    Einzelne Anweisungen werden in diesem Fall nur in bestimmten Situationen
+                    ausgeführt.
+
+
+if,if/else        - Die Ausführung dieser Anweisungen wird in solchen Fällen von einer oder
+                    von mehreren Bedingungen (if-Anweisung) abhängig gemacht. 
+                    Je nachdem, ob die Bedingung zutrifft, werden die entsprechenden
+                    Anweisungen ausgeführt oder nicht.Darüber hinaus können bei Nichterfüllung
+                    der Bedingung alternative Anweisungen (if/else-Anweisungen) 
+                    bearbeitet werden.
+                    Man nennt diese Stellen in einem Programm Verzweigungen oder auch
+                    bedingte Anweisungen.
+
+
+
+Bedingung,        - Bedingungen werden mithilfe von Wahrheitswerten (wahr oder falsch)
+wahr,falsch         und vergleichsoperatoren erstellt.Es folgt tabelle 1.3 mit einer Übersicht
+                    über die Vergleichsoperatoren.
+
+                    Operator        Bedeutung         Geltungsbereich
+                    ______________________________________________________________
+
+                       ==           gleich            Zahlen und Zeichenketten
+                    ______________________________________________________________
+
+                       !=           ungleich          Zahlen und Zeichenketten
+                    ______________________________________________________________
+
+                       >            größer als                          Zahlen
+                    ______________________________________________________________
+
+                       <            kleiner als                         Zahlen
+                    ______________________________________________________________
+
+                      >=            größer als oder gleich              Zahlen
+                    ______________________________________________________________
+
+                      <=            kleiner als oder gleich             Zahlen
+
+______________________________________________________________________________________________________
+ 
+                                        switch/case-Anweisung
+
+switch/case       - Die switch/case-Anweisung bietet für 
+                    einen bestimmten Typ von mehrfachen Verzweigungen eine alternative
+                    Schreibweise.Sie kann eingesetzt werden, wenn eine bestimmte
+                    Variable auf mehrere feste Werte hin geprüft werden soll.
+                    Diese Form der mehrfachen Verzweigung kann übersichtlicher 
+                    sein als eine geschachtelte Verzweigung,falls viele
+                    unterschiedliche Fälle vorliegen
+
+Beispiel            <!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
+                    <?php
+                      $liter = doubleval($_POST["liter"]);
+                      switch($_POST["sorte"])
+                      {
+                       case "N":
+                       $zahlung = $liter * 1.35;
+                       echo "$liter Liter Normal kosten $zahlung &euro;";
+                       break;
+                       case "S":
+                       $zahlung = $liter * 1.4;
+                       echo "$liter Liter Super kosten $zahlung &euro;";
+                       break;
+                       case "D":
+                       $zahlung = $liter * 1.35;
+                       "$liter Liter Diesel kosten $zahlung &euro;";
+                       break;
+                       default:
+                       echo "Als Sorte nur N, S oder D eingeben!";
+                      }
+                      ?>
+                      </body></html>
+
+
+break             - Es wird ein sogenannter switch-BLOCK erzeugt.Innerhalb dieses
+                    switch-Blocks wird der Wert von $_POST["sorte"] untersucht.
+                    Die vorhandenen Fälle (englisch:cases), also die case-Blöcke,
+                    werden der Reihe nach mit diesem Wert verglichen. Sobald einer der 
+                    Fälle zutrifft, werden alle weiteren Anweisungen bearbeitet,
+                    bis man auf die Anweisung break trifft.
+                    Die Anweisungen nach break werden nichtmehr ausgeführt.
+
+
+default           - Optional kann die Anweisung default benutzt werden.Diese wird
+                    benötigt,falls keiner der gennaten Fälle zutrifft.Das wäre im
+                    oben angegebenen Programm der Fall,wenn der Benutzer als Sorte 
+                    N noch S noch D eingeben würde.
+                    Vor PHP 7.0 war es möglich,mehrere default-Blöcke anzugeben,
+                    obwohl dies nicht sinnvoll war.
+
+______________________________________________________________________________________________________
+
+
+
+boolean           - In diesem Abschnitt wird das Wissen über Wahrheitswerte vertieft,
+                    die z.B. innerhalb von Bedingungen beötigt werden.Diese
+                    Wahrheitswerte können in eigenen Variablen zwschengespeichert werden,
+                    um sie später zu nutzen.Dazu dient der Datenytp boolean. in den 
+                    Variablen dieses Datentyps wird entweder true(wahr) oder false(falsch)
+                    gespeichert.Sie werden auch boolesche Variablen genannt.
+
+
+boolval()         - Zahlen,Zeichenketten und Variablen besitzen ebenfalls einen 
+                    Wahrheitswert, den sie in Ihren Programmen nutzen können. 
+                    Diese Nutzung kann Implizit erfolgen,also durch automatische Umwandlung,
+                    sie kann aber auch explizit mithilfe der Funktion boolval() erfolgen,
+                    die ihnen seit PHP 5.5 zur Verfügung steht.
+
+
+===,!==           - Mithilfe der Vergleichoperatoren === und !== können sie festellen, ob
+                    zwei Werte übereinstimmen und denselben Datentyp haben.
+
+
+______________________________________________________________________________________________________
+
+isset()           - Sie können die Existenz einer Variablen mithilfe der Funktion
+                    isset() prüfen.
+                    Sie können auf diese Weise z.B. festellen, ob bestimmte Werte
+                    aus einem Formular gesendet werden. Die Funktion isset()
+                    liefert einen Wahrheitswert,daher wird sie meist innerhalb einer Verzweigung
+                    eingesetzt.
+
+
+unset(),null      - In engen Zusammenhang mit der Funktion isset() steht die Funktion
+                    unset().Sie dient dem löschen der Existenz einer Variablen.
+                    Eine Variable kann ebenso gelöscht werden, indem man ihr den Wert 
+                    null oder NULL zuweist. 
+
+
+______________________________________________________________________________________________________
+
+
+is_int(),         - Sobald eine Zahl einen Dezimalpunkt mit einer Nachkommastelle hat,
+is_float()          wird sie von der Funktion is_int() nichtmehr als ganze Zahl erkannt,
+                    wird aber von der Funktion is_float() als Fließkommazahl erkannt,
+                    selbst wenn die Nachkommastelle den Wert 0 hat.
+
+
+is_string()       - Alles innerhalb von einfachenoder doppelten Hochkommata wird von der
+                    Funktion is_string() als Zeichenkette erkannt
+
+
+is_nummeric()     - Ganze Zahlen, Zahlen mit Nachkommastellen oder Exponentialzahlen
+                    werden auch innerhalb einer Zeichenkette von der Funktion is_numeric()
+                    als gültige Zahlenwerte erkannt.Ebenso trifft das zu,wenn sie
+                    ein negatives Vorzeichen oder negativen Exponenten besitzen.
+                    Sobald innerhalb der Zeichenkette ein ungültiges Zeichen vorkommt,
+                    werden siie nicht mehr als gültige Zahlenwerte erkannt.
+
+
+is_bool()         - Die Werte true und false werden von der Funktion is_bool() als
+                    Wahrheitswerte erkannt. Das trifft auch für Bedingungen zu,
+                    die mithilfe von Vergleichsoperatoren und logischen Operatoren
+                    gebildet werden.
+                    Inhalte von Zeichenketten werden nicht als Wahrheistwerte erkannt.
+
+
+______________________________________________________________________________________________________
+
+
+                                            SCHLEIFEN
+
+Schleife,
+Wiederholung      - Falls sich innerhalb eines Programms einzelne Anweisungen oder
+                    Blöcke von Anweisungen wiederholen, werden Schleifen verwendet.
+                    In PHP gibt es u.a die for-Schleife,die while-Schleife oder die 
+                    do-while-schleife.Welche Variante bei der Lösung eines aktuellen 
+                    Problems die richtige ist , läasst sich leicht enscheiden:
+
+                    - Sie verwenden die for schleife,wenn Ihnen die Anzahl der 
+                      Wiederholungen bekannt ist oder diese sich eindeutig im 
+                      Verlauf des Programms vor der schleife ergibt(Zählschleife).
+
+                    - Sie verwenden die while-Schleife oder die do-while-Schleife,
+                      wenn ihnen die Anzahl der Wiederholungen nicht bekannt ist
+                      und diese sich nicht eindeutig im Verlauf des Programms vor
+                      der Schleife ergibt.
+                      Die Wiederholung oder der Abbruch der Schleife ergibt sich erst
+                      zur Laufzeit des Programms(bedingungsgesteuerte Schleife).
+
+
+______________________________________________________________________________________________________
+
+
+continue          - Schleifenfortsetzung mit continue
+                    Die Anweisung continue sorgt für den Abbruch des aktuellen Schleifen-
+                    durchlaufs.Die Schleife wird anschließend unmittelbar mit dem nächsten 
+                    fortgesetzt.Ein möglisches Programm sieht wie folgt aus :
+
+                   <!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
+                   <?php
+                      for ($i=1; $i<=15; $i++)
+                      {
+   	                    if(if>=5 && $i<=12)
+   	                    continue;
+   	                    echo "Zeile $i<br>";
+                      }
+                   ?>
+                   </body></html>
+
+______________________________________________________________________________________________________
+
+
+                 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
