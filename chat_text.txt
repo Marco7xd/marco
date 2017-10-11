@@ -1,0 +1,3 @@
+﻿<tr><td>17.06.15 08:11:00</td><td>Hans</td><td>Hallo zusammen</td></tr>
+<tr><td>17.06.15 08:11:25</td><td>Claudia</td><td>Hallo Hans, bin auch wieder da</td></tr>
+<tr><td>17.06.15 08:11:51</td><td>Peter</td><td>Tag Leute, um was geht es heute?</td></tr>

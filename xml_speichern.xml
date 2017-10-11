@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fahrzeug>
+   <marke>Opel</marke>
+   <typ>Astra</typ>
+   <gewicht>1200 kg</gewicht>
+</fahrzeug>

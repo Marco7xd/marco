@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sammlung>
+<fahrzeug>
+   <marke>Opel</marke>
+   <typ>Astra</typ>
+   <motordaten>
+      <leistung>70 KW</leistung>
+      <hubraum>1600 ccm</hubraum>
+   </motordaten>
+   <gewicht>1200 kg</gewicht>
+   <reifen>155 R 14</reifen>
+   <reifen>165 H 14</reifen>
+</fahrzeug>
+<fahrzeug>
+   <marke>Ford</marke>
+   <typ>Focus</typ>
+   <motordaten>
+      <leistung>80 KW</leistung>
+      <hubraum>1700 ccm</hubraum>
+   </motordaten>
+   <gewicht>1100 kg</gewicht>
+   <reifen>185-60 R 13</reifen>
+   <reifen>205-70 R 13</reifen>
+</fahrzeug>
+</sammlung>

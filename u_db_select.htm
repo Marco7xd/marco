@@ -1,12 +1,12 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
-<p>Anzeige des Festplatten Herstellers:</p>
-<form action="radio.php" method = "post">
-   <p><select name="hersteller">
-      <option value="Fujitsu"> Fujitsu </option>
-      <option value="Quantum" selected="selected"> Quantum </option>
-      <option value="Seagate"> Seagate </option>
-   </select>
-   </p>
+﻿<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
+<p>Anzeige der Festplatten des Herstellers:</p>
+<form action = "u_db_select.php" method = "post">
+   <p><select name="herst">
+      <option value="Fujitsu" selected="selected">Fujitsu</option>
+      <option value="Quantum">Quantum</option>
+      <option value="Seagate">Seagate</option>
+   </select></p>
+   <p><input type="submit">
+   <input type="reset"></p>
 </form>
-<p><input type="Submit"> <input type="reset"></p>
 </body></html>

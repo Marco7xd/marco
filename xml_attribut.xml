@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fahrzeug>
+   <marke land="Deutschland">Opel</marke>
+   <typ>Astra</typ>
+   <motordaten zylinder="4" katalysator="Euro 5">
+      <leistung>70 KW</leistung>
+      <hubraum ventilzahl="3">1600 ccm</hubraum>
+   </motordaten>
+   <gewicht>1200 kg</gewicht>
+</fahrzeug>

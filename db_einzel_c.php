@@ -1,10 +1,12 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
+﻿<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
 <?php
-   $con = mysqli_connect("", "root", "7xd", "firma");
+   $con = mysqli_connect("", "root", "rooter");
+   mysqli_select_db($con, "firma");
+
    $sql = "UPDATE personen SET"
      . " name = '" . $_POST["nn"] . "',"
-     . " vorname = '" . $_POST["vn"] . "' ,"
-     . " personalnummer = " .$_POST["pn"] . ","
+     . " vorname = '" . $_POST["vn"] . "',"
+     . " personalnummer = " . $_POST["pn"] . ","
      . " gehalt = " . $_POST["ge"] . ","
      . " geburtstag = '" . $_POST["gt"] . "'"
      . " WHERE personalnummer = " . $_POST["oripn"];

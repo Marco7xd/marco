@@ -1,16 +1,16 @@
-<!DOCTYPE html><html><head><meta charset="utf-8">
+﻿<!DOCTYPE html><html><head><meta charset="utf-8">
 <script type="text/javascript">
 function fcheck()
 {
    if (document.anm.ben.value.length < 4)
    {
-   	alert("Der Benutzername muss 4-10 Zeichen haben!");
-   	return(false);
+      alert("Der Benutzername muss 4-10 Zeichen haben!");
+      return(false);
    }
    else if (document.anm.pw.value.length < 4)
    {
-   	alert("Das Passwort muss 4-6Zeichen haben!");
-   	return(false);
+      alert("Das Passwort muss 4-6 Zeichen haben!");
+      return(false);
    }
    return true;
 }
@@ -20,9 +20,11 @@ function fcheck()
 <h2>Anmeldung</h2>
 <form name="anm" action="submit_reset.php" method="post"
       onSubmit="return fcheck();">
-  <p><input name="ben" maxlength="10">
-      Benutzername (4-10)	
-
-
-
+   <p><input name="ben" maxlength="10">
+      Benutzername (4-10 Zeichen)</p>
+   <p><input name="pw" type="password" maxlength="6">
+      Passwort (4-6 Zeichen)</p>
+   <p><input type="submit" value="Login">
+      <input type="reset"></p>
 </form>
+</body></html>

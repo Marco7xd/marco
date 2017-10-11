@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
+﻿<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
 <?php
    echo ($preis ?? "Nicht vorhanden") . "<br>";
    $preis = 1.02;

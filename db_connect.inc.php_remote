@@ -1,0 +1,5 @@
+﻿<?php
+   $con = mysqli_connect("dbxyz.meinprovider.de",
+      "meinname", "meinpasswort");
+   mysqli_select_db($con, "db987654");
+?>

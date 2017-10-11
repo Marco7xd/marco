@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fahrzeug>
+   <marke>Opel</marke>
+   <typ>Astra</typ>
+   <motordaten>
+      <leistung>70 KW</leistung>
+      <hubraum>1600 ccm</hubraum>
+   </motordaten>
+   <gewicht>1200 kg</gewicht>
+</fahrzeug>

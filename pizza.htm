@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
+<p>Bitte geben Sie Ihren Namen und Ihre Adresse ein,<br>
+treffen Sie Ihre Auswahl und senden Sie das Formular ab:</p>
+<form action = "pizza.php" method = "post">
+   <p><input name="bst"> Name</p>
+   <p><input name="adr"> Adresse</p>
+   <p><input type="radio" name="anr" value="Herr"
+      checked="checked"> Herr <br>
+   <input type="radio" name="anr" value="Frau"> Frau</p>
+   <p><select name="ptyp">
+      <option value="Napoli" selected="selected">
+         Napoli (5,70 &euro;)</option>
+      <option value="Italia">Italia (6,30 &euro;)</option>
+      <option value="Con Tutto">Con Tutto (7,10 &euro;)</option>
+      <option value="4 Stagioni">4 Stagioni (6,60 &euro;)</option>
+      <option value="Mozzarella">Mozzarella (7,80 &euro;)</option>
+   </select></p>
+   <p><input type="checkbox" name="cth" value="Thunfisch">
+      Thunfisch (Aufpreis 0,60 &euro;)<br>
+   <input type="checkbox" name="ces" value="Extra Salami">
+      Extra Salami (Aufpreis 1,10 &euro;)</p>
+   <p><input type="submit"> <input type="reset"></p>
+</form>
+</body></html>

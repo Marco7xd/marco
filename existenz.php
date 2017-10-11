@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
+﻿<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
 <?php
    if (isset($preis)) echo "1: $preis<br>";
    else               echo "1: Nicht vorhanden<br>";
@@ -18,6 +18,5 @@
    $preis = null;
    if (isset($preis)) echo "5: $preis<br>";
    else               echo "5: Nicht vorhanden<br>";
-
 ?>
 </body></html>

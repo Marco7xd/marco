@@ -1,15 +1,11 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
-<p>Anzeige der Personen mit folgendem Namensanfang:</p>
-<form action="u_db_radio.php" method = "post">
-   <p><input type="radio" name="geh" value="1"
-      checked="checked"> bis 120 &euro; einschl.<br>
-   <input type="radio" name="geh" value="2">
-      ab 120 &euro; ausschl. bis 140 &euro; einschl.<br>
-   <input type="radio" name="geh" value="3">
-      ab 140 &euro; ausschl. </p>
-   <p><input type="checkbox" name="anp" value="Ausgabe nach Preis (absteigend) sortiert">
-   	  Ausgabe nach Preis (absteigend) sortiert <br>
-   	  <input type="submit"> <input type="reset"> 
-   </p>
+﻿<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
+<p>Anzeige der Festplatten aus der Preisgruppe:</p>
+<form action="u_db_radio.php" method="post">
+    <p><input type="radio" name="pr" value="1" checked="checked"> bis 120 &euro; einschl.<br>
+    <input type="radio" name="pr" value="2"> ab 120 &euro; ausschl. bis 140 &euro; einschl.<br>
+    <input type="radio" name="pr" value="3"> ab 140 &euro; ausschl.</p>
+    <p><input type="checkbox" name="prsort"> Ausgabe nach Preis (absteigend) sortiert</p>
+    <p><input type="submit">
+    <input type="reset"></p>
 </form>
 </body></html>
