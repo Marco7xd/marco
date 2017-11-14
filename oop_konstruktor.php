@@ -1,27 +1,27 @@
-﻿<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
+<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
 <?php
 /* Definition der Klasse Fahrzeug */
 class Fahrzeug
 {
-   private $geschwindigkeit;
-   private $bezeichnung;
+	private $geschwindigkeit;
+	private $bezeichnung;
 
-   function __construct($bez, $ge)
-   {
-      $this->bezeichnung = $bez;
-      $this->geschwindigkeit = $ge;
-   }
+    function __construct($bez, $ge)
+    {
+    	$this->bezeichnung = $bez;
+    	$this->geschwindigkeit =$ge;
+    }
 
-   function beschleunigen($wert)
-   {
-      $this->geschwindigkeit += $wert;
-   }
+    function beschleunigen($wert)
+    {
+    	$this->geschwindigkeit += $wert;
+    }
 
-   function __toString()
-   {
-      return "$this->bezeichnung, "
-         . "$this->geschwindigkeit km/h<br>";
-   }
+    function __toString()
+    {
+    	return "$this->bezeichnung, "
+    	   . "this->geschwindigkeit km/h<br>";
+    }
 }
 
 /* Objekte erzeugen */
@@ -32,11 +32,12 @@ $scania = new Fahrzeug("Scania TS 360",62);
 echo $vespa;
 echo $scania;
 
-/* Objekt verändern und ausgeben */
+/* Objekte verändern und ausgeben */
 $vespa->beschleunigen(20);
 echo $vespa;
 
+
 // $vespa->__construct("Vespa Formosa", 35);
-// echo $vespa;
+//echo $vespa;
 ?>
 </body></html>
